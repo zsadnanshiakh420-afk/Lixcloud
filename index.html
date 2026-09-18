@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lixcloud | Minecraft Hosting</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #08080d;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: rgba(8,8,13,0.95);
+    border-bottom: 1px solid #292933;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #9b4dff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    background: #914cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #a86cff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(
+        circle at top,
+        #35115e,
+        #08080d 55%
+    );
+}
+
+.hero h1 {
+    font-size: clamp(42px, 9vw, 75px);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #9b4dff;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* SECTIONS */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 6%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 35px;
+}
+
+.title p {
+    color: #999;
+    margin-top: 8px;
+}
+
+/* PLANS */
+.plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #111117;
+    border: 1px solid #292934;
+    border-radius: 17px;
+    padding: 28px;
+}
+
+.card h3 {
+    font-size: 23px;
+}
+
+.card p {
+    color: #999;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price small {
+    color: #888;
+    font-size: 14px;
+}
+
+.card ul {
+    list-style: none;
+    color: #bbb;
+    margin-bottom: 25px;
+    line-height: 2;
+}
+
+.card li::before {
+    content: "✓ ";
+    color: #a35cff;
+}
+
+/* PANEL */
+.panel {
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #17101f,
+        #101016
+    );
+    border: 1px solid #38204d;
+    border-radius: 20px;
+    padding: 45px 20px;
+}
+
+.panel p {
+    color: #aaa;
+    margin: 10px 0 25px;
+}
+
+/* DISCORD */
+.discord {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #222;
+    color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    .plans {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+LIX<span>CLOUD</span>
+</div>
+
+<div class="nav-links">
+<a href="#plans">Plans</a>
+<a href="#panel">Panel</a>
+<a href="#discord">Discord</a>
+</div>
+
+<a class="btn" href="#panel">
+Panel
+</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+<h1>
+Power Your <span>Minecraft</span> Server.
+</h1>
+
+<p>
+Fast, simple and affordable Minecraft hosting.
+Manage your server easily from mobile or PC.
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="#plans">
+View Plans
+</a>
+
+<a class="btn"
+href="https://discord.gg/FTV86JhjqN"
+target="_blank">
+Join Discord
+</a>
+
+</div>
+
+</header>
+
+
+<!-- PLANS -->
+
+<section id="plans">
+
+<div class="title">
+
+<h2>
+Hosting Plans
+</h2>
+
+<p>
+Choose the plan for your Minecraft server.
+</p>
+
+</div>
+
+
+<div class="plans">
+
+
+<!-- STARTER -->
+
+<div class="card">
+
+<h3>
+Starter
+</h3>
+
+<p>
+For small SMPs
+</p>
+
+<div class="price">
+₹49 <small>/month</small>
+</div>
+
+<ul>
+
+<li>2 GB RAM</li>
+<li>SSD Storage</li>
+<li>Basic Support</li>
+<li>Server Panel</li>
+
+</ul>
+
+<a class="btn"
+href="https://discord.gg/FTV86JhjqN"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+
+<!-- PRO -->
+
+<div class="card">
+
+<h3>
+Pro
+</h3>
+
+<p>
+For growing servers
+</p>
+
+<div class="price">
+₹99 <small>/month</small>
+</div>
+
+<ul>
+
+<li>4 GB RAM</li>
+<li>SSD Storage</li>
+<li>Priority Support</li>
+<li>Server Panel</li>
+
+</ul>
+
+<a class="btn"
+href="https://discord.gg/FTV86JhjqN"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+
+<!-- ULTRA -->
+
+<div class="card">
+
+<h3>
+Ultra
+</h3>
+
+<p>
+For bigger communities
+</p>
+
+<div class="price">
+₹199 <small>/month</small>
+</div>
+
+<ul>
+
+<li>8 GB RAM</li>
+<li>High Performance</li>
+<li>Priority Support</li>
+<li>Server Panel</li>
+
+</ul>
+
+<a class="btn"
+href="https://discord.gg/FTV86JhjqN"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PANEL -->
+
+<section id="panel">
+
+<div class="panel">
+
+<h2>
+Minecraft Server Panel
+</h2>
+
+<p>
+Manage your Minecraft server from your phone or PC.
+</p>
+
+<!-- APNI PANEL LINK YAHAN LAGAO -->
+
+<a
+class="btn"
+href="https://YOUR-PANEL-LINK.com"
+target="_blank">
+
+Open Panel
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- DISCORD -->
+
+<section id="discord">
+
+<div class="title">
+
+<h2>
+Need Help?
+</h2>
+
+<p>
+Join the Lixcloud Discord for support, orders and updates.
+</p>
+
+</div>
+
+<div class="discord">
+
+<a
+class="btn"
+href="https://discord.gg/FTV86JhjqN"
+target="_blank">
+
+Join Lixcloud Discord
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Lixcloud • Minecraft Hosting
+
+</footer>
+
+</body>
+  </html>
